@@ -40,3 +40,9 @@ while value != 0:
     number_list.append(random_number)
     value -= 1
 print(number_list)
+
+#3. Arrange numbers in the list from smallest to largest and strings in alphabetical order and print out the lists. 
+number_list.sort()
+string_list.sort()
+print(number_list)
+print(string_list)
