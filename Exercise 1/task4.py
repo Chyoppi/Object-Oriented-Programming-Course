@@ -2,9 +2,6 @@
 
 int_list = []
 
-#Another list to get all the negative integers
-minus_int = []
-
 #Function to let user put inputs
 def List_loop():
     loop = False
@@ -17,12 +14,20 @@ def List_loop():
             int_list.append(user_input)
     print(int_list)
 
-#Goes through the list that user gave and prints out negative numbers from another list.
+#Goes through the list that user gave and prints out negative numbers.
 def Negative_integers():
+    print("Negative numbers:")
     for x in int_list:
         if x < 0:
-            minus_int.append(x)
-    print(minus_int)
+            print(x)
+
+#Checks if number is even and if it is prints it.
+def Even_integers():
+    print("Even numbers:")
+    for x in int_list:
+        if x % 2 == 0:
+            print(x)
 
 List_loop()
 Negative_integers()
+Even_integers()
