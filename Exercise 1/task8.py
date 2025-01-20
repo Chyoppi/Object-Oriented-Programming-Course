@@ -3,7 +3,7 @@
 import random
 
 #Bots input function. It chooses randomly number between 1-3 based on input it will give rock, paper or scissors.
-def RPS_Bot():
+def rps_bot():
 
     random_value = random.randint(1,3)
     if random_value == 1:
@@ -19,14 +19,14 @@ def RPS_Bot():
     return chosen_bot
 
 #Users input function and if not written correctly it will give error.
-def RPS_User():
+def rps_user():
     chosen_user = input("Choose [Rock, Paper, Scissors]: ")
     if chosen_user not in ["Rock", "Paper", "Scissors"]:
         print("Error! Choose [Rock, Paper, Scissors]: ")
     return chosen_user
 
 #This checks who has won the game.
-def Determine_winner(user_choice, bot_choice):
+def determine_winner(user_choice, bot_choice):
     if user_choice == bot_choice:
         return "draw"
     elif (
@@ -39,7 +39,7 @@ def Determine_winner(user_choice, bot_choice):
         return "bot"
 
 #Reads past games from task8_stats.txt and it goes through for loop where it will tell how many games user/bot has won.
-def Past_games():
+def past_games():
     user_stats = 0
     bot_stats = 0
 
@@ -59,12 +59,12 @@ def RockPaperScissors():
     bot_score = 0
 
     print("Welcome to the game of Rock, Paper, Scissors!")
-    Past_games()
+    past_games()
     while user_score < 3 and bot_score < 3:
-        user_choice = RPS_User()
-        bot_choice = RPS_Bot()
+        user_choice = rps_user()
+        bot_choice = rps_bot()
 
-        winner = Determine_winner(user_choice, bot_choice)
+        winner = determine_winner(user_choice, bot_choice)
         if winner == "user":
             user_score += 1
             print("You win this round!")

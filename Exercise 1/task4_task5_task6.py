@@ -3,7 +3,7 @@
 int_list = []
 
 #Function to let user put inputs
-def List_loop():
+def list_loop():
     loop = False
 
     while loop != True:
@@ -15,7 +15,7 @@ def List_loop():
     print(int_list)
 
 #Goes through the list that user gave and prints out negative numbers.
-def Negative_integers():
+def negative_integers():
     print("Negative numbers:")
     for x in int_list:
         if x < 0:
@@ -23,7 +23,7 @@ def Negative_integers():
 
 #5. Add a function to the previous task that counts the number of even integers (= parilliset luvut in Finnish) that were among the entered
 #Checks if number is even and if it is adds +1 to even value.
-def Even_integers():
+def even_integers():
     even_value = 0
     for x in int_list:
         if x % 2 == 0:
@@ -31,7 +31,7 @@ def Even_integers():
     print(f"Amount of even numbers: {even_value}")
 
 #6. Add to the previous task a function that counts the sum of the positive integers divisible by three. 
-def Sum_of_three():
+def sum_of_three():
     print("Sum of values which are divisible by 3")
     sum_three = 0
     for x in int_list:
@@ -40,7 +40,10 @@ def Sum_of_three():
                 sum_three += x
     print(f"Sum: {sum_three}")
 
-List_loop()
-Negative_integers()
-Even_integers()
-Sum_of_three()
+def main():
+    list_loop()
+    negative_integers()
+    even_integers()
+    sum_of_three()
+
+main()
