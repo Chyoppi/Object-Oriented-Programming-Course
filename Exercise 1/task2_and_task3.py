@@ -1,5 +1,5 @@
 #2. Code a list of at least 10 items and fill it with numbers asked from user. Do the same with strings. Print out both lists. Then fill the number list with randomly generated numbers and print it out. 
-import random
+from random import randint
 
 number_list=[]
 string_list=[]
@@ -36,7 +36,7 @@ print(string_list)
 value = int(input("How many random numbers do you want to add to your numbers list: "))
 
 while value != 0:
-    random_number = random.randint(1,1000)
+    random_number = randint(1,1000)
     number_list.append(random_number)
     value -= 1
 print(number_list)

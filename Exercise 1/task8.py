@@ -1,11 +1,11 @@
 #8. Code a simple (and textual) implementation of Rock-Paper-Scissors game. Play until either you or the computer gets 3 wins. Use functions. a. Plan your game first and code piece by piece: read input from user, generate random number to get computer’s choice, then check who wins and keep track of victories. 
 
-import random
+from random import randint
 
 #Bots input function. It chooses randomly number between 1-3 based on input it will give rock, paper or scissors.
 def rps_bot():
 
-    random_value = random.randint(1,3)
+    random_value = randint(1,3)
     if random_value == 1:
         chosen_bot = "Rock"
 
