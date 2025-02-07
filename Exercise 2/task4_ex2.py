@@ -12,6 +12,7 @@ def factorials(n: int):
 
 #Making sure the function works correctly
 k = factorials(5)
+print(k)
 print(k[1])
 print(k[3])
 print(k[5])
