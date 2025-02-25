@@ -1,0 +1,9 @@
+Explain
+
+a.encapsulation = grouping up the data with methods that operate on that data. It's used to hide data for the front user and makes it more secure. 
+
+b.client = its a system or a program that requests services
+
+c.data attributes = data attributes are what type of data it is string/integer/float/boolean
+
+d.instance = specific object which is created from a class for example self.age is instance.
