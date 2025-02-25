@@ -1,6 +1,6 @@
 class Recording:
     def __init__(self, length: int):
-        self.__length = length  # Private variable
+        self.__length = length
 
     @property
     def length(self):
@@ -10,8 +10,8 @@ class Recording:
     def length(self, new_length: int):
         self.__length = new_length
 
-# Example usage
+
 the_wall = Recording(43)
-print(the_wall.length)  # Output: 43
+print(the_wall.length)
 the_wall.length = 44
-print(the_wall.length)  # Output: 44
+print(the_wall.length)
