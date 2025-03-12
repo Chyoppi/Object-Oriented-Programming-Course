@@ -1,2 +1,62 @@
 
+1.
+
+UMl Class diagram = Help you visually represent the structure and relationships of classes
+
+Attributes = For example self.age, self.name 
+
+Mehtods = Functions within classes 
+
+Inheritance = subclass or child who inherits upper classes attributes and mehtods
+
+Relationships = relationships between other classes
+
+2.
+
+For example: Computer, Table, Monitor
+
+class Computer
+-brand
+-weight
+-cpu
+-gpu
++turn_on
++turn_off
+
+class Table
+-material
+-brand
+-maximum_capacity
++move
++clean
+
+class Monitor
+-brand
+-size
+-refresh_rate
++turn_on
++turn_off
+
+3.
+
+Example of subclasses: laptop, electric table
+
+4/5.
+
+Example
+
+class Electric_Table(Table):
+(table attributes)
+--material
+--brand
+--maximum_capacity
+
+-height
+-user
+
++pre_saved_height
+
+6.
+Drawn into notebook
+
 
