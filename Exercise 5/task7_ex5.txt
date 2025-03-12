@@ -11,7 +11,7 @@ Inheritance = subclass or child who inherits upper classes attributes and mehtod
 
 Relationships = relationships between other classes
 
-2.
+2/3.
 
 For example: Computer, Table, Monitor
 
@@ -37,11 +37,11 @@ class Monitor
 +turn_on
 +turn_off
 
-3.
+4.
 
 Example of subclasses: laptop, electric table
 
-4/5.
+5.
 
 Example
 
